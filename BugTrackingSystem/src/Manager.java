@@ -8,12 +8,14 @@ private STATUS status;
 		this.status = status;
 	}
 
-	public static void assignBug() {
+	public static String assignBug() {
 		System.out.println(STATUS.NEW);
 		Developer.setBugStatus();
+		return "bug to be alloted";
 	}
 
-	public static void feedback() {
-		System.out.println("Bug solved");
+	public static String feedback() {
+		System.out.println(STATUS.CLOSED);
+		return "bug solved";
 	}
 }
