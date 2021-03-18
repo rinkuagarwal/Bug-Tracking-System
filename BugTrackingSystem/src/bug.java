@@ -1,26 +1,27 @@
+enum PRIORITY{
+	SEVERE, MILD, LOW
+}
+
+enum TYPEBUG{
+	RUNTIME , COMPILETIME
+}
 
 public class bug {
 	private String id;
 	private String name;
-	private PRIORITYBUG priority;
+	private PRIORITY priority;
 	private String location;
 	private TYPEBUG type;
 
-	public bug(String id, String name, PRIORITYBUG priority, String location, TYPEBUG type) {
-		super();
+	public bug(String id, String name, String location) {
+		
 		this.id = id;
 		this.name = name;
-		this.priority = priority;
+		
 		this.location = location;
-		this.type = type;
+		
 	}
 
-	enum PRIORITYBUG{
-		SEVERE, MILD, LOW
-	}
-	public enum TYPEBUG{
-		RUNTIME , COMPILETIME
-	}
 	public String getId() {
 		return id;
 	}
@@ -33,10 +34,10 @@ public class bug {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public PRIORITYBUG getPriority() {
+	public PRIORITY getPriority() {
 		return priority;
 	}
-	public void setPriority(PRIORITYBUG priority) {
+	public void setPriority(PRIORITY priority) {
 		this.priority = priority;
 	}
 	public String getLocation() {

@@ -1,19 +1,20 @@
 
 public class Tester {
-public Tester(int buildVersion, String synosis, SEVERITY severity) {
-		
-		this.buildVersion = buildVersion;
-		this.synosis = synosis;
-		this.severity = severity;
-	}
-
 	private int buildVersion;
 	private String synosis;
 	private SEVERITY severity;
-
+	
 	enum SEVERITY {
 		SEVERE, MILD, LOW
 	}
+public Tester(int buildVersion, String synosis) {
+		
+		this.buildVersion = buildVersion;
+		this.synosis = synosis;
+		
+	}
+
+
 
 	public static void testBug() {
 		System.out.println(STATUS.PENDINGRETEST);

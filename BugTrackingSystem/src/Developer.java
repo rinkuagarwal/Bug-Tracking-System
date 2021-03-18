@@ -1,23 +1,23 @@
 
 import java.util.Date;
+enum BUGSTATE {
+	WOULDNOTFIXED, CANNOTACCESS, NEEDMOREINFO, FIXED
+}
 public class Developer {
 	private STATUS status;
 	private BUGSTATE bugstate;
-	private Date submitON;
+	private int submitON;
 	
 
 	
 	
-	public Developer(STATUS status, BUGSTATE bugstate, Date submitON) {
+	public Developer(STATUS status, int i) {
 		
 		this.status = status;
-		this.bugstate = bugstate;
-		this.submitON = submitON;
+		
+		this.submitON = i;
 	}
 
-	public enum BUGSTATE {
-		WOULDNOTFIXED, CANNOTACCESS, NEEDMOREINFO, FIXED
-	}
 
 	public static void setBugStatus() {
 		System.out.print(STATUS.ASSIGNED);
@@ -51,11 +51,11 @@ public class Developer {
 		this.bugstate = bugstate;
 	}
 
-	public Date getSubmitON() {
+	public int getSubmitON() {
 		return submitON;
 	}
 
-	public void setSubmitON(Date submitON) {
+	public void setSubmitON(int submitON) {
 		this.submitON = submitON;
 	}
 }
