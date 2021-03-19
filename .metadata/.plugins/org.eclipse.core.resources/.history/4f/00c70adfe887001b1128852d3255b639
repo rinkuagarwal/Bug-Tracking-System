@@ -1,0 +1,7 @@
+package day7;
+class GFC202 {}  class GFC203 extends GFC202 {}
+class GFC204 {
+  static void m(GFC202 x) {System.out.print("GFC202");}
+  static void m(GFC203 x) {System.out.print("GFC203");}
+  public static void main(String[] args) {m(null);}
+}

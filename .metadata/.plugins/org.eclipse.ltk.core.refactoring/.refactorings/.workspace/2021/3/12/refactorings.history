@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;BugTrachingSystem&apos; to &apos;BugTrackingSystem&apos;" description="Rename resource &apos;BugTrachingSystem&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/BugTrachingSystem" name="BugTrackingSystem" stamp="1616045904057" updateReferences="true"/>
+</session>

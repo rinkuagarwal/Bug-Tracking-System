@@ -1,0 +1,30 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import junit.framework.Assert;
+
+class MthTest {
+
+	@Test
+	void testAdd() {
+		Mth math=new Mth();
+		int result =math.add(-1,2,3);
+     Assert.assertEquals(4,result);
+
+	}
+	@Test
+	void testAddWithNegativity() {
+		Mth math=new Mth();
+		int result1 =math.add(-1,-2,-3);
+     Assert.assertEquals(-6,result1);
+
+	}
+	@Test
+	void testMultiply() {
+		Mth math=new Mth();
+		int result2=math.multiply(-3,4,5);
+		Assert.assertEquals(-60, result2);
+	}
+
+}

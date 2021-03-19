@@ -1,0 +1,12 @@
+package day7;
+
+public class initialization {
+	 static int x;                             // 1
+	  public static void main(String[] args) {  // 2
+	    int y;                                  // 3
+	    System.out.println("x="+x);             // 4
+	    //System.out.println("y="+y);             // 5
+	}
+
+	
+}

@@ -1,0 +1,11 @@
+package day7;
+
+public class initialization {
+	static String m(int i) {return "int";}
+	  static String m(float i) {return "float";}
+	  public static void main (String[] args) {
+	    long a1 = 1; double b1 = 2; System.out.print(m(a1)+","+ m(b1));
+	}
+	  
+	
+}

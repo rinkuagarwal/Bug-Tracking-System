@@ -1,0 +1,20 @@
+
+public class Manager {
+private STATUS status;
+	
+
+	public Manager(STATUS status) {
+		
+		this.status = status;
+	}
+
+	public static void assignBug() {
+		System.out.println(STATUS.NEW);
+		Developer.setBugStatus();
+	}
+
+	public static String feedback() {
+		System.out.println("bug resolved");
+		return "bug solved";
+	}
+}

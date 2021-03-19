@@ -1,0 +1,15 @@
+package day7;
+
+public class initialization {
+	 
+	
+	  static int m1 (int i1, int i2) {
+		    int i3=0;
+		    if (i1 > 0) {i3 = i1 + i2;}
+		    return i3;
+		  }
+		  public static void main(String[] args) {
+		    System.out.println(m1(1,2));
+		}
+	 
+}

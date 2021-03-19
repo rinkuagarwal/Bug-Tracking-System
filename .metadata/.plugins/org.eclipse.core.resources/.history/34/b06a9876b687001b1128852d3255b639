@@ -1,0 +1,61 @@
+
+import java.util.Date;
+enum BUGSTATE {
+	WOULDNOTFIXED, CANNOTACCESS, NEEDMOREINFO, FIXED
+}
+public class Developer {
+	private STATUS status;
+	private BUGSTATE bugstate;
+	private Date submitON;
+	
+
+	
+	
+	public Developer(STATUS status, Date submitON) {
+		
+		this.status = status;
+		
+		this.submitON = submitON;
+	}
+
+
+	public static void setBugStatus() {
+		System.out.print(STATUS.ASSIGNED);
+		assignBugTester();
+	}
+
+	public static void assignBugTester() {
+		System.out.println(STATUS.OPEN);
+		Tester.testBug();
+	}
+
+	public static void acknowledgeTester() {
+
+		System.out.println(BUGSTATE.FIXED);
+		Manager.feedback();
+	}
+
+	public STATUS getStatus() {
+		return status;
+	}
+
+	public void setStatus(STATUS status) {
+		this.status = status;
+	}
+
+	public BUGSTATE getBugstate() {
+		return bugstate;
+	}
+
+	public void setBugstate(BUGSTATE bugstate) {
+		this.bugstate = bugstate;
+	}
+
+	public Date getSubmitON() {
+		return submitON;
+	}
+
+	public void setSubmitON(Date submitON) {
+		this.submitON = submitON;
+	}
+}

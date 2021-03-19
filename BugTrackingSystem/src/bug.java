@@ -12,7 +12,7 @@ public class bug {
 	private PRIORITY priority;
 	private String location;
 	private TYPEBUG type;
-
+	private String i;
 	public bug(String id, String name, String location) {
 		
 		this.id = id;

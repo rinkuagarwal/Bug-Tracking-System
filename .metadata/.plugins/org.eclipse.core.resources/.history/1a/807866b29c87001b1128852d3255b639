@@ -1,0 +1,17 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import junit.framework.Assert;
+
+class MthTest {
+
+	@Test
+	void testAdd() {
+		Mth math=new Mth();
+		int esult =math.add(1,2,3);
+     Assert.assertEquals(6,result);
+
+	}
+
+}
